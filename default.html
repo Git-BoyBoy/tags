@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>测试</title>
+		<link rel="stylesheet" type="text/css" href="src/jquery.tagsinput.css">
+		<script type="text/javascript" src="src/jquery.min.js"></script>
+		<script type="text/javascript" src="src/jquery.tagsinput.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$('#tags').tagsInput({
+					width: 'auto'
+				});
+				console.log($('#tags').val());
+			});
+		</script>
+	</head>
+
+	<body>
+		<form>
+			<input id="tags" type="text" class="tags" value="测试1,测试2,测试3" style="display: none;">
+		</form>
+	</body>
+
+</html>
